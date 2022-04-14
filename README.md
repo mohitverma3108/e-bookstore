@@ -28,7 +28,7 @@ To set up Online Books Store Service application locally, configure
   * Run install
   
         mvn install
-  ###Running the application locally
+  ### Running the application locally
 
     There are several ways to run a Spring Boot application on your local machine. One way is to
 
@@ -59,7 +59,7 @@ To set up Online Books Store Service application locally, configure
 
       http://localhost:8080/api-docs
 
-##Optional Information(Data usage guide)
+## Optional Information(Data usage guide)
 
   - To add/update static data entries, file path is 
       
