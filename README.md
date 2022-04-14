@@ -6,7 +6,7 @@ To the setup E-BookStore-service application locally
 * JDK 8
 * Maven 4
 
-* Clone the project - git clone https://github.com/SVITS2009/account-service.git
+* Clone the project - git clone https://github.com/mohitverma3108/e-bookstore
   Go to project directory and run the below commands.
 
 * Clean - mvn clean
