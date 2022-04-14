@@ -1,5 +1,5 @@
 # E-BookStore(Online Books Store)
-> E-BookStore is Java based Spring Boot Application which uses In memory database(H2), where the user can perform the following operations:
+> E-BookStore is Java based Spring Boot Application which uses In memory database(H2), and user can perform the following operations:
 
     # Add a new Book
     # Modify any existing book details
