@@ -1,24 +1,38 @@
-E-BookStore(Online Books Store) Spring Boot Application
+# E-BookStore(Online Books Store)
+> E-BookStore is Java based Spring Boot Application which uses In memory database(H2), where the user can perform the following operations:
 
-H2(In Memory DB) + Spring Boot + JPA
+    # Add a new Book
+    # Modify any existing book details
+    # Search any book details
+    # Remove any existing book
+    # Checkout operation for single or multiple books which will return the total payable amount
 
-To set up Online Books Store Service application locally
-* JDK 8
-* Maven 4
+## Requirements  (Prerequisites)
+To set up Online Books Store Service application locally, configure
+* Any IDE (Optional)
+* JDK 8 [Install](https://docs.oracle.com/javase/8/docs/technotes/guides/install/install_overview.html)
+* Maven 3 [Install](https://maven.apache.org/download.cgi)
 
-* Clone the project - git clone https://github.com/mohitverma3108/e-bookstore
+## Installation
+* Clone the project 
+
+      git clone https://github.com/mohitverma3108/e-bookstore
+* Go to project directory and run below commands.
+
+  * Clean the project
+       
+        mvn clean
+  * Run the test cases
   
-* Go to project directory and run the below commands.
-
-  * Clean - mvn clean
-  * Run the test cases - mvn test
-  * Run install - mvn install
-
-  * Running the application locally -
+        mvn test
+  * Run install
+  
+        mvn install
+  ###Running the application locally
 
     There are several ways to run a Spring Boot application on your local machine. One way is to
 
-    1.) Run the main method in the com.assignment.bookstore.EBookstoreApplication class from your IDE.
+    1.) Run the main method in the com.assignment.bookstore.EBookstoreApplication class from your local IDE.
 
     2.) Alternatively you can run the application from terminal after adding Spring Boot Maven plugin like so:
 
@@ -45,8 +59,7 @@ To set up Online Books Store Service application locally
 
       http://localhost:8080/api-docs
 
-
-* Optional Information -
+##Optional Information(Data usage guide)
 
   - To add/update static data entries, file path is 
       
@@ -58,4 +71,17 @@ To set up Online Books Store Service application locally
 
       Example - go to data.sql file, and you can add/update static properties like 'defining static book types along with discount percentage', 'defining promotion code and its validity' etc...
 
-  
+## Features
+E-BookStore is an application, where the user can perform the following operations:
+* Add a new Book
+* Update any book details
+* Search any book details
+* Remove any existing book
+* Checkout operation for single or multiple books which will return the total payable amount
+
+## Authors
+Mohit Verma  – mverma0063@gmail.com
+
+You can find me here at:
+[Github](https://github.com/mohitverma3108)
+[LinkedIn](https://www.linkedin.com/in/mohit-verma-887b54132)
