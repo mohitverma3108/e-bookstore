@@ -2,18 +2,19 @@ E-BookStore(Online Books Store) Spring Boot Application
 
 H2(In Memory DB) + Spring Boot + JPA
 
-To the setup E-BookStore-service application locally
+To set up Online Books Store Service application locally
 * JDK 8
 * Maven 4
 
 * Clone the project - git clone https://github.com/mohitverma3108/e-bookstore
-  Go to project directory and run the below commands.
+  
+* Go to project directory and run the below commands.
 
-* Clean - mvn clean
-* Run the test cases - mvn test
-* Run install - mvn install
+  * Clean - mvn clean
+  * Run the test cases - mvn test
+  * Run install - mvn install
 
-  * Running the application locally
+  * Running the application locally -
 
     There are several ways to run a Spring Boot application on your local machine. One way is to
 
@@ -23,15 +24,17 @@ To the setup E-BookStore-service application locally
 
         mvn spring-boot:run
 
-    3.) Alternatively You can run the application on docker container like so:
-        
-    * A.) Create docker image
+    3.) Also, alternatively You can run the application on docker container too like so:
+     
+    * A.) Get your docker environment ready in your machine [click here](https://docs.docker.com/desktop/dev-environments/), if you want to run it locally.
+
+    * B.) Create docker image
         
           ./mvnw spring-boot:build-image
-    * B.) Deploy docker image
+    * C.) Deploy docker image
 
           docker run -it -p8080:8080 e-bookstore:0.0.1-SNAPSHOT
-
+      * here '0.0.1-SNAPSHOT' is the application version.
 - H2 Database URL
 
         http://localhost:8080/h2-ui
@@ -45,12 +48,14 @@ To the setup E-BookStore-service application locally
 
 * Optional Information -
 
-  - To update static data entry (data.sql) file path
+  - To add/update static data entries, file path is 
       
         src/main/resources/data.sql
+
+  - Currently, above file contains the static data entries of certain promotion/offer code and pre-fixed book type.
+
+  - If you want, you can add/update any static properties based on requirement.
+
+      Example - go to data.sql file, and you can add/update static properties like 'defining static book types along with discount percentage', 'defining promotion code and its validity' etc...
+
   
-  - Currently, reading static data entry access file under resources of project directory. if we want, we can update above properties based on requirenment.
-
-      Example - data.sql file is available in the path - ...\src\main\resources\data.sql, and we can update this file if we want to update static properties like defining static book types along with discount percentage, defining promotion code and its validity etc...
-
-  - Currently Static data file contains the static data entries of certain promotion/offer code and pre-fixed book type.
