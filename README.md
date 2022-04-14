@@ -51,6 +51,6 @@ To the setup E-BookStore-service application locally
   
   - Currently, reading static data entry access file under resources of project directory. if we want, we can update above properties based on requirenment.
 
-      Example - data.sql file is available in the path - ...\src\main\resources\data.sql, and we want to connect with that. we have to update above properties.
+      Example - data.sql file is available in the path - ...\src\main\resources\data.sql, and we can update this file if we want to update static properties like defining static book types along with discount percentage, defining promotion code and its validity etc...
 
-  - Static data file contains data for promotion/offer code and certain pre-fixed book type configured using static data entry, if other
+  - Currently Static data file contains the static data entries of certain promotion/offer code and pre-fixed book type.
